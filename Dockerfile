@@ -16,5 +16,5 @@ RUN useradd -m openwrt && \
 USER openwrt
 WORKDIR /home/openwrt
 
-RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-22.03.05 && \
+RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-22.03 && \
     openwrt/scripts/feeds update -a
