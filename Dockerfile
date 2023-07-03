@@ -19,4 +19,4 @@ RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-22.03 &&  \
     openwrt/scripts/feeds update -a && openwrt/scripts/feeds install -a -p packages
 
 RUN  openwrt/scripts/feeds update luci && openwrt/scripts/feeds install -a -p luci
-RUN make V=s
+RUN cd openwrt && make V=s
