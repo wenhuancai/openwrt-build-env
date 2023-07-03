@@ -20,5 +20,5 @@ RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-22.03 &&  \
 
 RUN  openwrt/scripts/feeds update luci && openwrt/scripts/feeds install -a -p luci
 COPY .config openwrt
-RUN cd openwrt && make V=s
+RUN cd openwrt && make -j4
 
